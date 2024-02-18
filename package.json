@@ -1,0 +1,22 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "reach-project",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stalinbalraj/React.git"
+  },
+  "author": "stalinbalraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stalinbalraj/React/issues"
+  },
+  "homepage": "https://github.com/Stalinbalraj/React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}

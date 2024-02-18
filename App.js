@@ -4,9 +4,18 @@ const heading = React.createElement(
   "Hello World from React"
 );
 
-console.log(heading);
+const parent = React.createElement("h1", { id: "parent" }, [
+  React.createElement("div", { id: "child1" }, [
+    React.createElement("h1", {}, "im an h1 tag"),
+    React.createElement("h2", {}, "im an h2 tag"),
+  ]),
+  React.createElement("div", { id: "child2" }, [
+    React.createElement("h1", {}, "im an h1 tag"),
+    React.createElement("h2", {}, "im an h2 tag"),
+  ]),
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 console.log(root);
-root.render(heading);
+root.render(parent);
