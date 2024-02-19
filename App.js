@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const heading = React.createElement(
   "h1",
   { id: "main-heading" },
@@ -17,5 +20,21 @@ const parent = React.createElement("h1", { id: "parent" }, [
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const JSX = (
+  <div>
+    <h1 id="main-heading">Hello World from React</h1>
+    <h1 id="parent">
+      <div id="child1">
+        <h1>im an h1 tag</h1>
+        <h2>im an h2 tag</h2>
+      </div>
+      <div id="child2">
+        <h1>im an h1 tag</h1>
+        <h2>im an h2 tag</h2>
+      </div>
+    </h1>
+  </div>
+);
+
 console.log(root);
-root.render(parent);
+root.render(JSX);
