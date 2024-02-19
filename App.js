@@ -20,7 +20,7 @@ const parent = React.createElement("h1", { id: "parent" }, [
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const JSX = (
+const JSX = () => (
   <div>
     <h1 id="main-heading">Hello World from React</h1>
     <h1 id="parent">
@@ -37,4 +37,13 @@ const JSX = (
 );
 
 console.log(root);
-root.render(JSX);
+
+const FunctionalBasedComponent = () => {
+  return (
+    <h2>
+      This is from function based component
+      <JSX />
+    </h2>
+  );
+};
+root.render(<FunctionalBasedComponent />);
